@@ -1,0 +1,85 @@
+div#root {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+button {
+  font-family: Inter, sans-serif;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  color: black;
+  height: 100%;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+div#die-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+#die-container button {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: none;
+}
+
+#reroll-button {
+  font-size: 1.2rem;
+  min-width: 100px;
+  padding: 0px 20px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #5035FF;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.rolls-done {
+  margin: 0;
+  margin-right: 20px;
+}
