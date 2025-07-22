@@ -1,0 +1,18 @@
+.language-chips {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.language {
+    padding: 4px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    font-style: bold;
+    margin: 1px;
+    
+}
