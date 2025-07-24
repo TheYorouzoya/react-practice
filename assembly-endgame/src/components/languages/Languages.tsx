@@ -1,17 +1,25 @@
 import { languages } from "./languages";
-import './Languages.css'
 import { nanoid } from "nanoid"
+import type { LanguagesProps } from "../types";
+import { clsx } from "clsx";
 
-export default function Languages() {
-    const languageElements = languages.map(language => {
+import './Languages.css'
+
+export default function Languages({ wrongGuessCount }: LanguagesProps) {
+    const languageElements = languages.map((language, index) => {
         const languageStyles = {
             color: language.color,
             backgroundColor: language.backgroundColor
         }
         const languageId = nanoid()
+        const className = clsx({
+            language: true,
+            lost: index < wrongGuessCount,
+        })
+
         return (
             <span 
-                className="language" 
+                className={className} 
                 style={languageStyles}
                 key={languageId}
                 id={languageId}
